@@ -11,7 +11,6 @@ import {MaterialModule} from './app/material-module';
 import {MAT_FORM_FIELD_DEFAULT_OPTIONS} from '@angular/material/form-field';
 
 import {StepperOverviewExample} from './app/stepper-overview-example';
-import { CampagneComponent } from './app/campagne/campagne.component';
 
 // Default MatFormField appearance to 'fill' as that is the new recommended approach and the
 // `legacy` and `standard` appearances are scheduled for deprecation in version 10.
@@ -26,8 +25,8 @@ import { CampagneComponent } from './app/campagne/campagne.component';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  entryComponents: [CampagneComponent],
-  declarations: [StepperOverviewExample,CampagneComponent],
+  entryComponents: [StepperOverviewExample],
+  declarations: [StepperOverviewExample],
   bootstrap: [StepperOverviewExample],
   providers: [
     { provide: MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' } },
